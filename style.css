@@ -1,0 +1,189 @@
+	@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@500&display=swap');
+        body {
+            font-family: 'IBM Plex Sans', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2;
+            color: #333;
+			    background-image: url('https://images.unsplash.com/photo-1693491012954-e7a0527b699e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1632&q=80');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+	font-size: 16px;
+        }
+
+        h1 {
+            text-align: center;
+            margin: auto;
+			font-size: 40px;
+			font-weight: bold;
+        
+		}
+		h2 {
+			font-size: 30px;
+		}
+		.h1 {
+		    display: flex;
+            justify-content: space-around;
+            align-items: flex-start;
+            margin-top: 20px;
+			
+        }			
+		.info {
+		    display: flex;
+            justify-content: space-around;
+            align-items: flex-start;
+            margin-top: 20px;
+			cursor: pointer;
+			position: relative;
+			text-align: center; 
+        }
+  .popup {
+    display: none;
+    position: absolute;
+			background-color: rgba(255, 255, 255, 0.8);
+			backdrop-filter: blur(5px);
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transform: translate(-55%, 0);
+    left: 55%;
+    z-index: 1;
+  }
+
+  .popup a {
+    display: block;
+    margin: 10px 0;
+    color: #333;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  .popup a:hover {
+    color: #007bff;
+  }
+		.infor {
+			background-color: rgba(255, 255, 255, 0.5);
+			backdrop-filter: blur(5px);
+            box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+            border-radius: 25px;
+            padding:0px;
+            width: 60%;
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+		.in4 {
+			background-color: rgba(255, 255, 255, 0.5);
+			backdrop-filter: blur(5px);
+            box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+            border-radius: 25px;
+            padding: 12px;
+            width: auto;
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+			align-items:center;
+        }
+
+  .avatar {
+    width: 30px; /* Đặt kích thước hình ảnh */
+    height: 30px; /* Tự động điều chỉnh chiều cao theo tỷ lệ khung hình */
+    margin-right: 5px; /* Khoảng cách giữa hình ảnh và văn bản */
+	border-radius: 15px;
+  }
+        .assets {
+            display: flex;
+            justify-content: space-around;
+            align-items: flex-start;
+            margin-top: 20px;
+        }
+
+        .asset-section {
+            background-color: rgba(255, 255, 255, 0.7);
+			backdrop-filter: blur(5px);
+            box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+            border-radius: 25px;
+            padding: 20px;
+            width: 30%;
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .asset-section:hover {
+            transform: translateY(-5px);
+            box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.4);
+        }
+
+        .asset-title {
+            font-size: 30px;
+            margin-bottom: 15px;
+            color: #333;
+			font-weight: bold;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th, td {
+            border: 1px solid #AAAAAA;
+            padding: 8px;
+            text-align: left;
+        }
+
+        .align-right {
+            text-align: right;
+        }
+.refresh-button {
+	font-family: 'IBM Plex Sans', sans-serif;
+    padding: 5px 10px;
+    font-size: 14px;
+    border: 0;
+    border-radius: 45px;
+    background-color: #4B0082;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+	margin-left: 15px
+}
+
+.refresh-button:hover {
+    background-color: #800080;
+    transform: scale(1.05);
+}
+.total-amount {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.total-vnd {
+    font-size: 24px;
+    color: #666;
+	font-weight: bold;
+}
+label[for="sort-option"] {
+    font-weight: normal;
+    margin-right: 5px;
+}
+
+#sort-option {
+    appearance: none;
+    background-color: #4B0082;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 45px;
+    cursor: pointer;
+	font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 14px;
+    transition: background-color 0.3s, transform 0.3s;
+    outline: none;
+}
+
+#sort-option:hover {
+    background-color: #800080;
+}
+#sort-option:focus {
+    background-color: #800080;
+    transform: scale(1.05);
+}
