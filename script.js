@@ -135,7 +135,6 @@ function calculateTotalAssets() {
       const rect = infoElement.getBoundingClientRect();
       popupElement.style.top = rect.bottom + "px";
 
-      // Kiểm tra trạng thái hiển thị của popup và thay đổi nó
       if (popupElement.style.display === "block") {
         popupElement.style.display = "none";
       } else {
