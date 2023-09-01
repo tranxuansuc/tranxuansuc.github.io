@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thống kê tài sản</title>
+	<link rel="icon" type="image/jpeg" href="https://i.imgur.com/6OhkCZ6.jpg">
+    <link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <h1 class="h1">
+	<div class="infor">
+	<p class="title">THỐNG KÊ TÀI SẢN</p>
+	</div></h1>
+	<h2 class="info">
+	<div class="in4">
+	<img id="avatar" class="avatar" alt="avatar" src="https://i.imgur.com/6OhkCZ6.jpg">
+	<text id="name" class="name">Trần Nguyên Đức</text></label>
+	</div>
+	</h2>
+<div class="popup">
+  <a href="https://www.facebook.com/suc.tranxuan.7" target="_blank"><i class="fab fa-facebook"></i> Facebook</a>
+  <a href="https://twitter.com/Duc2k9" target="_blank"><i class="fab fa-twitter"></i> Twitter</a>
+  <a href="https://www.youtube.com/@tranxuansuc" target="_blank"><i class="fab fa-youtube"></i> YouTube</a>
+</div>
+    <div class="assets">
+        <div class="asset-section">
+            <h3 class="asset-title">TÀI SẢN TIỀN TỆ</h3>
+            <table>
+                <tr>
+                    <th>Currency</th>
+                    <th class="align-right">Amount</th>
+                </tr>
+                <tr>
+                    <td>USD (Payeer)</td>
+                    <td id="usd-amount" class="align-right">$8.50</td>
+                </tr>
+                <tr>
+                    <td>RUB (Payeer)</td>
+                    <td id="rub-amount" class="align-right">₽ 24.62</td>
+                </tr>
+            </table>
+        </div>
+        <div class="asset-section">
+            <h3 class="asset-title">TÀI SẢN TIỀN ẢO</h3>
+			    <label for="sort-option">Sort by:</label>
+    <select id="sort-option">
+        <option value="valueHighToLow">Value (High to Low)</option>
+        <option value="valueLowToHigh">Value (Low to High)</option>
+    </select>
+				<button id="refresh-button" class="refresh-button">Refresh Price</button>
+            <table class="asset-table">
+                <tr>
+                    <th>Name</th>
+                    <th>Quantity</th>
+                    <th>Current Price</th>
+                    <th>Value</th>
+                </tr>
+                <tr id="bitcoin">
+                    <td>Bitcoin (BTC)</td>
+                    <td>0.00078155</td>
+                    <td>Loading...</td>
+                    <td>$100,000</td>
+                </tr>
+                <tr id="binancecoin">
+                    <td>Binance Coin (BNB)</td>
+                    <td>0.04910035</td>
+                    <td>Loading...</td>
+                    <td>$100,000</td>
+                </tr>			
+                <tr id="tron">
+                    <td>Tron (TRX)</td>
+                    <td>16.216138</td>
+                    <td>Loading...</td>
+                    <td>$100,000</td>
+                </tr>	
+                <tr id="bitcoin-cash">
+                    <td>Bitcoin Cash (BCH)</td>
+                    <td>0.00640827</td>
+                    <td>Loading...</td>
+                    <td>$100,000</td>
+                </tr>
+                <tr id="matic-network">				
+                    <td>Polygon (MATIC)</td>
+                    <td>2.00856348</td>
+                    <td>Loading...</td>
+                    <td>$100,000</td>
+                </tr>
+                <tr id="tether">				
+                    <td>Tether (USDT)</td>
+                    <td>1</td>
+                    <td>Loading...</td>
+                    <td>$100,000</td>
+                </tr>
+                <tr id="shiba-inu">				
+                    <td>Shiba Inu (SHIB)</td>
+                    <td>100000</td>
+                    <td>Loading...</td>
+                    <td>$100,000</td>
+                </tr>
+                <tr id="celo">				
+				    <td>Celo (CELO)</td>
+                    <td>0.95631638</td>
+                    <td>Loading...</td>
+                    <td>$100,000</td>
+                </tr>	
+				<tr id="usd-coin">
+				    <td>USD coin (USDC)</td>
+                    <td>0.24</td>
+                    <td>Loading...</td>
+                    <td>$100,000</td>
+                </tr>	
+                <tr id="avalanche-2">	
+				    <td>Avalanche (AVAX)</td>
+                    <td>0.0216</td>
+                    <td>Loading...</td>
+                    <td>$100,000</td>
+                </tr>				
+            </table>
+        </div>
+        <div class="asset-section">
+            <h3 class="asset-title">TỔNG TÀI SẢN</h3>
+            <p id="total-amount" class="total-amount">$0.00</p>
+			<p id="total-vnd" class="total-vnd">0 VND</p>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
