@@ -84,9 +84,9 @@
         }
 
   .avatar {
-    width: 30px; /* Đặt kích thước hình ảnh */
-    height: 30px; /* Tự động điều chỉnh chiều cao theo tỷ lệ khung hình */
-    margin-right: 5px; /* Khoảng cách giữa hình ảnh và văn bản */
+    width: 30px;
+    height: 30px;
+    margin-right: 5px;
 	border-radius: 15px;
   }
         .assets {
