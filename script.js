@@ -1,4 +1,4 @@
-    const rubToUsdRate = 0.01043;
+    const rubToUsdRate = 0.01039;
     const usdToVndRate = 24085;
 	function numberWithCommas(x) {
     return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
