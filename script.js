@@ -90,6 +90,9 @@ async function updateTablePrice() {
     };
 
     createAssetPieChart(assetAllocation);
+   const assetPercentages = calculateAssetPercentages(assetAllocation);
+   const sortedAssetPercentages = sortAssetPercentagesDescending(assetPercentages);
+   updatePercentageTable(sortedAssetPercentages);
 }
 
 function getDecimalPlaces(id) {
@@ -208,4 +211,38 @@ function createAssetPieChart(assets) {
             maintainAspectRatio: false,
         },
     });
+}
+function calculateAssetPercentages(assetAllocation) {
+   const totalValue = Object.values(assetAllocation).reduce((accumulator, currentValue) => accumulator + currentValue);
+   const percentages = {};
+
+   for (const [key, value] of Object.entries(assetAllocation)) {
+       percentages[key] = ((value / totalValue) * 100).toFixed(2);
+   }
+
+   return percentages;
+}
+function updatePercentageTable(assetPercentages) {
+   const percentageTable = document.getElementById('percentage-table');
+
+   let percentageHTML = '<h4>% GIÁ TRỊ TÀI SẢN TRÊN TỔNG TÀI SẢN</h4>';
+   percentageHTML += '<ul>';
+
+   for (const [key, value] of Object.entries(assetPercentages)) {
+       percentageHTML += `<li><b>${key}</b>: ${value}%</li>`;
+   }
+
+   percentageHTML += '</ul>';
+
+   percentageTable.innerHTML = percentageHTML;
+}
+function sortAssetPercentagesDescending(assetPercentages) {
+   const sortedPercentages = {};
+   const sortedKeys = Object.keys(assetPercentages).sort((a, b) => assetPercentages[b] - assetPercentages[a]);
+
+   for (const key of sortedKeys) {
+       sortedPercentages[key] = assetPercentages[key];
+   }
+
+   return sortedPercentages;
 }
