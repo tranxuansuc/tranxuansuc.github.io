@@ -1,5 +1,5 @@
-const rubToUsdRate = 0.01039;
-const usdToVndRate = 24107.5;
+const rubToUsdRate = 0.01019;
+const usdToVndRate = 24070;
 const pieChartCanvas = document.getElementById('asset-pie-chart');
 let usdAmountValue = parseFloat(document.getElementById('usd-amount').textContent.replace('$', ''));
 let rubAmountValue = parseFloat(document.getElementById('rub-amount').textContent.split(' ')[1]);
