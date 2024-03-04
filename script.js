@@ -1,5 +1,5 @@
-const rubToUsdRate = 0.0109010;
-const usdToVndRate = 24689;
+const rubToUsdRate = 0.01096;
+const usdToVndRate = 24674.6;
 const pieChartCanvas = document.getElementById('asset-pie-chart');
 let usdAmountValue = parseFloat(document.getElementById('usd-amount').textContent.replace('$', ''));
 let rubAmountValue = parseFloat(document.getElementById('rub-amount').textContent.split(' ')[1]);
@@ -63,7 +63,7 @@ async function updateTablePrice() {
     const coinIds = [
         'bitcoin', 'binancecoin', 'tron', 'bitcoin-cash',
         'matic-network', 'tether', 'shiba-inu', 'celo',
-        'usd-coin', 'avalanche-2'
+        'avalanche-2'
     ];
 
     const cryptoData = await fetchCryptoData(coinIds.join(','));
@@ -85,7 +85,6 @@ async function updateTablePrice() {
         'USDT': parseFloat(document.getElementById('tether').cells[3].textContent.replace('$', '')),
         'SHIB': parseFloat(document.getElementById('shiba-inu').cells[3].textContent.replace('$', '')),
         'CELO': parseFloat(document.getElementById('celo').cells[3].textContent.replace('$', '')),
-        'USDC': parseFloat(document.getElementById('usd-coin').cells[3].textContent.replace('$', '')),
         'AVAX': parseFloat(document.getElementById('avalanche-2').cells[3].textContent.replace('$', '')),
     };
 
@@ -201,7 +200,6 @@ function createAssetPieChart(assets) {
                     '#009393',
                     '#AE4133',
                     '#FCFE53',
-					'#2775CA',
 					'#E84142',
                 ],
             }],
